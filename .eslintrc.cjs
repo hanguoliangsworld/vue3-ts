@@ -3,6 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
+    parser: "@typescript-eslint/parser",
+  },
   extends: ["plugin:vue/vue3-recommended", "plugin:prettier/recommended"],
   plugins: ["prettier", "vue"],
   rules: {
@@ -17,5 +22,6 @@ module.exports = {
       },
     ],
     "vue/no-multiple-template-root": 0,
+    "vue/multi-word-component-names": "off",
   },
-};
+}
